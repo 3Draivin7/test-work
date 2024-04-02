@@ -1,0 +1,183 @@
+.about-director{
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+    margin-left: 100px;
+    /*justify-content: center;*/
+}
+
+.slider-line{
+    display: flex;
+    width: 4440px;
+    height: 446px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider{
+    max-width: 1480px;
+    height: 446px;
+    overflow: hidden;
+}
+
+.slider-line_block{
+    max-width: 1480px;
+height: 446px;
+display: flex;
+}
+
+.button-left{
+    display: flex;
+    position: sticky;
+    left: 40px;
+    top:40%;
+    border: 1px solid rgba(224, 224, 224, 1);
+    background-color: transparent;
+    width: 82px;
+height: 94px;
+justify-content: center;
+align-items: center;
+}
+
+.button-right{
+    position: sticky;
+    right: 40px;
+    border: 0;
+    border: 1px solid rgba(224, 224, 224, 1);
+    background-color: transparent;
+    width: 82px;
+    height: 94px;
+    justify-content: center;
+    align-items: center;
+    top:40%;
+}
+
+.container-about_boss{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 90px;
+    margin-top: 118px;
+}
+
+.name-finboss{
+    font-family: Helios;
+font-size: 36px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+}
+
+.boss{
+    font-family: Helios;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+color: rgba(130, 130, 130, 1);
+}
+
+.think-about_finboss{
+    font-family: Helios;
+font-size: 18px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+margin-top: 20px;
+}
+
+.finnboss_img{
+    position: relative;
+    right: 69px;
+    display: flex;
+    height: 425px;
+    margin-top: 20px;
+}
+
+.mobile{
+    display: none;
+} 
+
+@media (width >= 768px) and (width <= 1400px){
+
+    .about-director{
+        justify-content:baseline;
+        margin-left: 0;
+    }
+    .slider-line_block{
+        display: flex;
+        height: 730px;
+        width: 33%;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .slider{
+        overflow-y: visible;
+        height: 730px;
+    }
+
+    .finnboss_img-container{
+        background-color: rgba(247, 247, 247, 1);
+        height:400px;
+        width: 93%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .finnboss_img{
+        width: 438px;
+        height: 400px;
+margin-top: 0;
+    }
+
+    .container-about_boss{
+        margin-top: 0;
+        margin-left: 0;
+
+    }
+
+    .name-finboss{
+        font-family: Helios;
+font-size: 28px;
+font-weight: 400;
+line-height: 28px;
+width: 95%;
+text-align: center;
+    }
+
+    .think-about_finboss{
+        width: 95%;
+        text-align: center;
+
+    }
+
+    .boss{
+        font-family: Helios;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+width: 95%;
+text-align: center;
+    }
+
+    .slider-line{
+        height: 730px;
+        width: 300%;
+    }
+
+    .button-left{
+width: 50px;
+z-index: 3;
+top:210px;
+left: 72px;
+    }
+
+    .button-right{
+        width: 50px;
+        height: 94px;
+        z-index: 3;
+        top:210px;
+        right: 72px;
+    }
+}

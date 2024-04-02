@@ -1,0 +1,123 @@
+.header{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(242, 242, 242, 1);
+    justify-content: center;
+    margin-top: 47px;
+}
+
+.header-container{
+    display: flex;
+    width:79%;
+    justify-content: space-around;
+}
+
+.nav-menu_header{
+    display: flex;
+    gap:51px; 
+}
+
+.header-img{
+    width: 115px;
+height: 25px;
+margin-top: -2px;
+}
+
+.nav-menu_item{
+    font-family: Helios;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.84px;
+text-align: left;
+
+}
+
+.button-nav{
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-bottom: 26px;
+}
+
+.button-nav:hover{
+    border-bottom: 2px solid rgba(233, 134, 42, 1);
+}
+
+.nav-socials{
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.48px;    
+display: flex;
+color: rgba(24, 124, 211, 1);
+margin-top: 3px;
+}
+
+.nav-socials::before{
+    content: "";
+    justify-content: center;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 124px;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+	border: 2px solid transparent; 
+    border-top: 5px solid rgba(36, 38, 39, 1);
+}
+
+.nav{
+    display: flex;
+    gap:51px;
+}
+
+.button-menu_header{
+    display: none;
+}
+
+@media (width >= 768px) and (width <= 1400px) {
+    .nav{
+        display: none;
+    }
+
+    .button-menu_header{
+        display: flex;
+        border: 0;
+        background-color: transparent;
+    }
+    .header{
+        padding: 38px 35px ;
+        width: 100%;
+        margin-top: 0;
+        border: 0;
+    }
+
+    .header-container{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}
+
+@media (width >= 320px) and (width <= 767px){
+    .nav{
+        display: none;
+    }
+
+    .button-menu_header{
+        display: flex;
+        border: 0;
+        background-color: transparent;
+    }
+    .header{
+        padding: 25px 14px ;
+        width: 100%;
+        margin-top: 0;
+        border: 0;
+    }
+
+    .header-container{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}

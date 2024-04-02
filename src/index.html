@@ -49,42 +49,101 @@
 </header>
 <main>
   <section class="invite-team">
+    <div class="decorated-img_container">
     <img class="decorated-img" src="<%=require('./images/finy1.png')%>">
+  </div>
     <div class="decorated-zone">
     </div>
     <div class="under_decorated-zone">
     </div>
     <h1 class="title">Энергия твоего роста! –<br> заряжаем твою карьеру</h1>
+    <div class="button_container">
     <button class="add-team">Стать частью команды</button>
+  </div>
   </section>
   <section class="about-work">
-    <div class="about-work_container">
-    <div class="development about-work_block">
-      <img class="about-work_img" src="<%=require('./images/Vector1.svg')%>">
-      <span class="about-work_title">Развитие</span>
+    <div class="sliders">
+
+      <div class="slides">
+
+        <input type="radio" name="radio-btn" id="radio1">
+
+        <input type="radio" name="radio-btn" id="radio2">
+
+        <input type="radio" name="radio-btn" id="radio3">
+
+        <div class="slide first">
+
+            <div class="development about-work_block">
+                <svg class="about-work_img">
+                  <use  xlink:href="<%=require('./sprite.svg')%>#vector1"></use>
+                </svg>
+                <span class="about-work_title">Развитие</span>
+              </div>
+              <div class="dynamics about-work_block">
+                <svg class="about-work_img">
+                  <use  xlink:href="<%=require('./sprite.svg')%>#vector4"></use>
+                </svg>
+                <span class="about-work_title">Динамика</span>
+                <span class="about-work_undertitle">Общего центра обслуживания. Современные технологии, проекты, рабочие группы</span>
+              </div>
+        </div>
+        <div class="slide">
+          <div class="study about-work_block">
+            <svg class="about-work_img">
+              <use  xlink:href="<%=require('./sprite.svg')%>#vector2"></use>
+            </svg>
+            <span class="about-work_title">Обучение</span>
+          </div>
+          <div class="convenience about-work_block">
+            <svg class="about-work_img">
+              <use  xlink:href="<%=require('./sprite.svg')%>#vector5"></use>
+            </svg>
+            <span class="about-work_title">Комфорт</span>
+            </div>
+            </div>
+        <div class="slide">
+          <div class="responsibility about-work_block">
+            <svg class="about-work_img">
+              <use  xlink:href="<%=require('./sprite.svg')%>#vector3"></use>
+            </svg>
+            <span class="about-work_title">Ответственность</span>
+          </div>
+              <div class="reliability about-work_block">
+                <svg class="about-work_img">
+                  <use  xlink:href="<%=require('./sprite.svg')%>#vector6"></use>
+                </svg>
+                <span class="about-work_title">Надежность</span>
+              </div>
+
+            </div>
+        </div>
+
+        <div class="navigation-auto">
+
+          <div class="auto-btn1"></div>
+
+          <div class="auto-btn2"></div>
+
+          <div class="auto-btn3"></div>
+
+
+        </div>
+
+    
+
+      <div class="navigation-manual">
+
+        <label for="radio1" class="manual-btn"></label>
+
+        <label for="radio2" class="manual-btn"></label>
+
+        <label for="radio3" class="manual-btn"></label>
+
+      </div>
+
+
     </div>
-    <div class="study about-work_block">
-      <img class="about-work_img" src="<%=require('./images/Vector2.svg')%>">
-      <span class="about-work_title">Обучение</span>
-    </div>
-    <div class="responsibility about-work_block">
-      <img class="about-work_img" src="<%=require('./images/Vector3.svg')%>">
-      <span class="about-work_title">Ответственность</span>
-    </div>
-    <div class="dynamics about-work_block">
-      <img class="about-work_img" src="<%=require('./images/Vector4.svg')%>">
-      <span class="about-work_title">Динамика</span>
-      <span class="about-work_undertitle">Общего центра обслуживания. Современные технологии, проекты, рабочие группы</span>
-    </div>
-    <div class="convenience about-work_block">
-      <img class="about-work_img" src="<%=require('./images/Vector5.svg')%>">
-      <span class="about-work_title">Комфорт</span>
-    </div>
-    <div class="reliability about-work_block">
-      <img class="about-work_img" src="<%=require('./images/Vector6.svg')%>">
-      <span class="about-work_title">Надежность</span>
-    </div>
-  </div>
   </section>
   <section class="about-director">
     <div class="slider">
@@ -118,7 +177,9 @@
       Цель нашей работы обеспечить высочайший сервис нашим клиентам. Дать возможность бизнесу сосредоточиться на своих ключевых задачах, передав функции управления персоналом, казначейства, финансового учёта и отчётности нам.
     </span>
   </div> 
-  <img class="finnboss_img" src="<%=require('./images/finbosscopy1.png')%>">
+  <div class="finnboss_img-container">
+    <img class="finnboss_img" src="<%=require('./images/finbosscopy1.png')%>">
+  </div>
 </div>
 <div class="slider-line_block">
   <div class="container-about_boss">
@@ -132,14 +193,68 @@
   Цель нашей работы обеспечить высочайший сервис нашим клиентам. Дать возможность бизнесу сосредоточиться на своих ключевых задачах, передав функции управления персоналом, казначейства, финансового учёта и отчётности нам.
 </span>
 </div> 
-<img class="finnboss_img" src="<%=require('./images/finbosscopy1.png')%>">
+<div class="finnboss_img-container">
+  <img class="finnboss_img" src="<%=require('./images/finbosscopy1.png')%>">
+</div>
 </div>
         <button class="button-right"><img src="<%=require('./images/rightVector.svg')%>"></button>
       </div>
     </div>
 
   </section>
-
+ 
 </main>
+<div class="popup popup_type_add">
+  <div class="popup__content">
+    <button type="button" class="popup__close"><img  src="<%=require('./images/Vectorx.svg')%>"></button>
+    <h3 class="popup__title">Отклик на вакансию</h3>
+    <form class="popup__form" name="add">
+      <input  name="vacancy" minlength="2" maxlength="30" pattern="\D+" id="vacancy-input" class="popup__input " placeholder="Желаемая вакансия *" required>
+      <span class="vacancy-input-error error-text"></span>
+      <input  name="name" id="name-input" class="popup__input" placeholder="Фамилия, имя и отчество *" required>
+      <span class="name-input-error error-text"></span>
+      <div class="number-mail_box">
+        <div class="input-block">
+      <input type="number" name="number" id="number-input" class="popup__input number" placeholder="Мобильный телефон*" required>
+      <span class="number-input-error error-text"></span>
+    </div>
+    <div class="input-block">
+      <input type="email" name="email" id="email-input" class="popup__input mail" placeholder="E-mail" required>
+      <span class="email-input-error error-text"></span>
+    </div>
+    </div>
+      <input  name="education" id="education-input" class="popup__input " placeholder="Образование *" required>
+      <span class="education-input-error error-text"></span>
+      <input  name="place" id="place-input" class="popup__input " placeholder="Адрес места жительства *" required>
+      <span class="place-input-error error-text"></span>
+      <div class="double">
+        <div class="input-block">
+      <input type="text" name="date" id="date-input" class="popup__input " placeholder="Дата рождения" onfocus="(this.type='date')" required>
+      <span class="date-input-error error-text"></span>
+    </div>
+    <div class="input-block">
+      <input type="file" name="file" id="file-input" class="popup__input" placeholder="Загрузить резюме" required>
+      <label class="label-file" for="file-input"><span>Загрузить резюме</span></label>
+      <span class="file-input-error error-text"></span>
+    </div>
+  </div>
+      <input  name="comments" id="comments-input" class="popup__input " placeholder="Комментарий" required>
+      <span class="comments-input-error error-text"></span>
+      <div class="submit-block">
+      <label class="search-form__label">
+        <input
+          type="checkbox"
+          name="time"
+          value="night"
+          class="search-form__checkbox visually-hidden"
+        />
+        <span class="search-form__pseudo-checkbox"><img class="pseudo-img" src="<%=require('./images/Vectorv.svg')%>"></span>
+        <span class="search-form__label-text">Я принимаю условия <a href="#" class="link_information">передачи информации</a></span>
+      </label>
+      <button type="submit" class="button popup__button">Отравить</button>
+    </div>
+    </form>
+  </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,245 @@
+.popup{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.popup__content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*left: 50%;
+    top: 50%;*/
+    width: 1145px;
+    height: 1205px;
+background-color: white;
+/**margin-top: 175px;*/
+}
+
+.popup__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 57px;
+}
+
+.popup__input{
+    width: 712px;
+    height: 70px;
+    margin-top: 9px;
+}
+
+.number-mail_box{
+    display: flex;
+    gap: 5px;
+}
+
+.number{
+    width: 353px;
+height: 70px;
+}
+
+.mail{
+    width: 353px;
+    height: 70px;
+}
+
+.popup__title{
+    margin-top:104px;
+    width: 712px;
+    font-family: HeliosC;
+font-size: 36px;
+font-weight: 700;
+line-height: 41.83px;
+}
+
+.double{
+    display: flex;
+}
+
+#date-input{
+    width: 266px;
+height: 70px;   
+}
+
+#file-input{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.label-file{
+    font-family: Helios;
+    width: 262px;
+font-size: 15px;
+font-weight: 400;
+line-height: 18.6px;
+text-align: left;
+display: flex;
+color:rgba(24, 124, 211, 1);
+padding-bottom: 25px;
+border-bottom: 1px solid rgba(36, 38, 39, 1);
+align-items: flex-end;
+justify-content: center;
+margin-left: 34px;
+}
+
+/*.error-text{
+    display: none;
+}*/
+
+.popup__close{
+    width: 70px;
+height: 70px;
+position: absolute;
+background-color: rgba(233, 134, 42, 1);
+border: none;
+right: -70px;
+top: 100px;
+}
+
+.visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  #comments-input{
+    width: 712px;
+height: 153px;
+  }
+
+  #comments-input::placeholder{
+    transform: translateY(-40px)translateX(25px);
+    font-family: Helios;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.84px;
+  }
+
+  .popup__input::placeholder{
+    transform: translateX(25px);
+    font-family: Helios;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.84px;
+  }
+
+  .submit-block{
+    display: flex;
+    width: 712px;
+height: 140px;
+top: 1170px;
+border: 1px solid rgba(242, 242, 242, 1);
+gap: 125px;
+justify-content: center;
+align-items: center;
+/*margin-bottom: 65px;*/
+  }
+
+  .popup__button{
+    background: rgba(233, 134, 42, 1);
+    width: 210px;
+    height: 64px; 
+    font-family: HeliosC;
+font-size: 16px;
+font-weight: 700;
+line-height: 18.59px;
+text-align: left;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0;
+  }
+
+  .search-form__label-text{
+    font-family: Helios;
+font-size: 13px;
+font-weight: 400;
+line-height: 16.12px;
+text-align: center;
+  }
+
+  .link_information{
+    color: #187cd3;
+    text-decoration: none;
+  }
+
+  .search-form__pseudo-checkbox{
+    width: 24px;
+height: 24px;
+position: absolute;
+border: 1px solid rgba(233, 134, 42, 1);
+margin-left: -30px;
+margin-top: -3px;
+  }
+
+  .search-form__label:active .search-form__pseudo-checkbox{
+    background-color: rgba(233, 134, 42, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-form__checkbox:checked + .search-form__pseudo-checkbox{
+    background-color: rgba(233, 134, 42, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pseudo-img{
+    width: 10px;
+height: 6.88px;
+  }
+
+  .popup_type_add{
+    display: none;
+  }
+
+  .popup_is-opened{
+    display: flex;
+  }
+
+  .error-text{
+    font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: red;
+  position: absolute;
+  }
+  
+  .form__input-error_active{
+    position: inherit;
+  }
+
+  .form__input_type_error{
+    outline: 0;
+   border: 1px solid rgba(190, 26, 26, 1);
+  }
+
+  .input-block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button_inactive{
+    background: rgba(195, 200, 200, 1);
+  }
